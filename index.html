@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Web Resume</title>
+      <link rel="stylesheet" href="CSS/master.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+            <header>
+                  <nav>
+                        <div class="logo">
+                              WEB-BASED RESUME
+                        </div>
+
+                        <div class="menu">
+                              <ul class="tab-links">
+                                    <li class="active"><a href="#backtotop">Home</a></li>
+                                    <li><a href="#experience">Experience</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+                  <div id="backtotop" class="tab active">
+                  </div>
+            </header>
+      </div>
+
+      <script type="text/javascript">
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+
+    <div class="tab-content">
+        <div id="kk" class="tab active">
+            <div class="prof-box">
+              <img src="Images/profilepic.jpeg" height="230" width="165" alt="Avatar" class="profile-pic">
+              <h1>Becky Henning</h1>
+              <h3>Computer Science and Finance Major</h3>
+              <div class="line-break">
+              <p>Check out my website resume</p>
+              <a href = "https://www.linkedin.com/in/becky-henning-4b44a3134/" target="_blank"><i class="fab fa-linkedin" height="60" weight="60"></i></a>
+            </div>
+        </div>
+      </div>
+        <div id="experience" class="tab">
+            <section class="slideshow">
+              <div class = "content-slideshow">
+                <div class="content-carousel">
+                  <figure class = "shadow"><img src="Images/Ford.jpeg" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Amerisure.jpg" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Sparty's.jpg" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Spectrum.png" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Guernsey.png" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/DSP.jpg" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Cancer.jpg" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Emagine.png" height="230" width="230"></figure>
+                  <figure class = "shadow"><img src="Images/Research.jpeg" height="230" width="230"></figure>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <div id="projects" class="tab">
+          <div class="container"><!--everything on the page-->
+            <div class="row">
+              <header>
+                <div class="proj-box">
+                  <h1>Projects</h1>
+                  <div class="line-break">
+                </div>
+            </div>
+              </header>
+            </div> <!--closing row 1-->
+
+              <div class="row">
+              <div class="row3">
+                <div class="six left">
+                </div><!--closing column 6-->
+
+                <div class="three middle">
+                </div><!--closing column 3-->
+
+                <div class="three right">
+                </div><!--closing column 3-->
+              </div>
+              </div><!--closing row 3-->
+
+
+              <div class="row">
+              <div class="row4">
+
+                <div class="three left">
+                </div><!--closing column 3-->
+
+                <div class="six middle">
+                </div><!--closing column 6-->
+
+                <div class="three right">
+                </div><!--closing column 3-->
+              </div>
+              </div><!--closing row 4-->
+
+              <div class="row">
+              <div class="row5">
+                <div class="three left">
+                </div><!--closing column 3-->
+
+                <div class="three middle1">
+                </div><!--closing column 3-->
+
+                <div class="three middle2">
+                </div><!--closing column 3-->
+
+                <div class="three right">
+                </div><!--closing column 3-->
+              </div>
+              </div><!--closing row 5-->
+
+
+              <div class="row">
+              <div class="row6">
+                <div class="six left">
+                </div><!--closing column 6-->
+
+                <div class="three middle">
+                </div><!--closing column 3-->
+
+                <div class="three right">
+                </div><!--closing column 3-->
+              </div>
+              </div><!--closing row 6-->
+
+            </div>
+
+        </div>
+        <div id="contact" class="tab">
+
+            <div class="contact-title">
+              <h1>Feel free to reach out.</h1>
+              <h3>Or contact by phone (248) 880-2737</h3>
+            </div>
+            <div class="contact-form">
+              <form id="contact-form" method="post" action="contact-form.php">
+                  <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                  <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                  <input name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+                  <input type="submit" class="form-control submit" value="SEND MESSAGE">
+              </form>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+
+</html>
